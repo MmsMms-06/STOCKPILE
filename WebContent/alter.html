@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/Alter.css">
+<script src="JavaScript/Validation.js"></script>
+<meta charset="ISO-8859-1">
+<style>
+body{
+background-image:url('f5.jpg');
+background-repeat:no-repeat;
+}
+</style>
+<title>reset your password</title>
+</head>
+<body>
+<h1>To reset your password</h1>
+<form action="Alter" onSubmit = "return checkPassword(this)">
+<label for="password"><b>New Password</label>
+<input type="password"  name="password" required><br><br>
+<label for="confirmpassword">ConfirmPassword</label>
+<input type="password"  id="confirmpassword" required><br><br>
+<button class="v4"><span>Submit</span></button><br><br>
+</form>
+</body>
+</html>

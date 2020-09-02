@@ -1,0 +1,112 @@
+@CHARSET "ISO-8859-1";
+body{
+background-color:#dbdad0;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #fefae0;}
+#customers tr:nth-child(odd){background-color: #fefae0;}
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #bc6c25;
+  color: white;
+}
+.v{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+  background-color: #bc6c25;
+  color: white;
+  border-radius:12px;
+}
+h1{
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#bc6c25 ;
+  text-align:center;
+  color:#BCBABE;
+  padding: 30px;
+ font-family: Arial;
+ position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+#custom {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#custom td, #custom th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#custom tr:nth-child(even){background-color: #fefae0;}
+#custom tr:nth-child(odd){background-color: #fefae0;}
+#custom tr:hover {background-color: #ddd;}
+
+#custom th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #bc6c25;
+  color: white;
+}
+#btnExport{
+	padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  background-color: #bc6c25;
+  color: white;
+  border-radius:14px;
+  width:10%;
+  font-size:25px;
+}
+#btnExport:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#btnExport span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btnExport span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btnExport:hover span {
+  padding-right: 25px;
+}
+
+#btnExport:hover span:after {
+  opacity: 1;
+  right: 0;
+}

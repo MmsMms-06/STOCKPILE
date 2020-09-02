@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/MySurvey.css">
+<script src="JavaScript/About.js"></script>
+<script src="JavaScript/Mysurvey.js"></script>
+<style>
+.vc1{
+position:absolute;
+top:70%;
+right:60%;
+font-family:Arial;
+ font-size: 30px;
+}
+.vc2{
+position:absolute;
+top:75%;
+right:60%;
+font-family:Arial;
+ font-size: 30px;
+}
+.x2 {
+background-color:  #003B46;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  color: white; 
+  border: 1px solid #003B46;
+  border-radius: 12px;
+   position: absolute;
+   top:80%;
+left:45%;
+ width: 8%;
+}
+.x2 {
+   float: right;
+ 
+}
+
+.x2:hover {
+  background-color: #003B46;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.c {
+position:absolute;
+top:69%;
+right:43%;
+  width: 15%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px;
+   background-color: #003B46;
+    color: #FFFFFF;
+}
+.c1 {
+position:absolute;
+top:75%;
+right:43%;
+  width: 15%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px;
+   background-color: #003B46;
+    color: #FFFFFF;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+</head>
+<body>
+
+<div>
+<h1><img src="Images/logo.jpg" alt="STOCKPILE"></h1>
+<ul>
+<li><div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="passive" href="about.html">About</a>
+   <div class="con"><a class="passive" href="contact.html">Contact</a>
+  <div class="dropdown-content">
+  <p>Email:stockpile@mail.com</p>
+  <p>Contact:1800-456-546</p>
+  <p>Address:Bangalore,Karnataka</p>
+  </div>
+  </div>
+  <a class="passive" href="faq.html">FAQ's</a>
+  <a class="passive" href="login.html">LogOut</a>
+</div>
+<div id="main">
+  <span class="button" onclick="openNav()">&#9776;</span>
+  </div></li>
+<li><a href="admin.html">Home</a></li>
+  <li><a href="createsurvey.html">Create a survey</a></li>
+  <li><a class="active" href="mysurveys.html">My Surveys</a></li>
+  <li><a href="about.html">About</a></li>
+   <li><a href="MyProfile.jsp">My Profile</a></li>
+ </ul>
+</div>
+<div>
+<form action="Submit"  onSubmit = "return checkPassword(this)" >
+<label class="vc" ><b>Enter Survey Id of Question Survey</label>
+<input type="number" name="sid"><br><br>
+<input type="submit" class="x1"><br>
+</form>
+</div>
+<div>
+<form  action="Accept" >
+<label class="vc1" ><b>Enter Survey Id of Registration Survey</label>
+<input   type="text" class="c" name="ssid" ><br><br>
+<label class="vc2" ><b>Enter Choice</label>
+<input  type="text" class="c1" name="choice"><br><br>
+<input type="submit" class="x2"><br>
+</form>
+</div>
+</body>
+</html>

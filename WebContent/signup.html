@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+ background-image: url('Images/sp9.jpg');
+background-repeat: no-repeat;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+bacground-color:black;
+}
+a:visited {
+  color: #f4d8cd;
+}
+a:hover {
+  color: #4a536b ;
+}
+body{
+font-family: Arial;
+text-align: center;
+color: white;
+  top: 30%;
+  left: 40%;
+   position: absolute;
+}
+
+.button1 {
+  background-color:  #f4d8cd;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black; 
+  border: 1px solid  #4a536b;
+  border-radius: 12px;
+ width: 25%;
+}
+
+.button1:hover {
+  background-color:  #4a536b;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+input[type=text], input[type=password],input[type=email],input[type=radio],input[type=date],input[type=number]{
+border-radius: 12px;
+   background-color: #f4d8cd;
+}
+</style>
+<!-- <link rel="stylesheet" href="CSS/Signup.css"> -->
+<script src="JavaScript/Valid.js"></script>
+<meta charset="ISO-8859-1">
+<title>Account Creation</title>
+</head>
+<body>
+<h2> Create Your StockPile Account</h2>
+  <form action="Signups" onSubmit = "return checkPassword(this)">
+<div>
+<label for="username"><b>UserName</label>
+<input type="text" name="username" required>
+</div><br>
+<div>
+<label for="email">MailID</label>
+<input type="email" name="email" required><br><br>
+<label for="password">Password</label>
+<input type="password"  name="password" required><br><br>
+<label for="confirm password">ConfirmPassword</label>
+<input type="password"  id="confirmpassword"  onkeyup='check();' required><br><br>
+</div>
+<div>
+<input type="radio" name="gender" value="male" required>
+<label for="gender">Male</label>
+<input type="radio" name="gender"  value="female"  required>
+<label for="gender">Female</label>
+<input type="radio" name="gender" value="other" required>
+<label for="gender">Other</label><br><br>
+</div>
+<div>
+<label for="dateofbirth">Date of Birth</label>
+<input type="date" name="dateofbirth" placeholder="YYYY-MM-DD" required><br><br>
+<lable for = "countrycode">CountryCode</lable>
+<input type="text" name="countrycode" placeholder="+91"required>
+<label for="mobilenumber">MobileNumber</label>
+<input type="number" name="mobilenumber"  required><br><br>
+<label for="security">what is your favourite fruit </label>
+<input type="text" name="security"  required><br><br>
+</div>
+<div>
+<input type="checkbox" name="agree"required>
+<label for="agree">I agree all <a href="Tc.html"> terms&conditions</a> </label><br><br>
+<button class="button1"  >Submit</button><br><br>
+</div>
+</form>
+</body>
+</html>

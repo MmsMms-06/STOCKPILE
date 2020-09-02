@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body{
+background-color:#f4eade;
+font-family:arial;
+font-size:20px;
+}
+h2{
+position:absolute;
+right:1%;
+bottom:0%
+}
+.d{
+position:absolute;
+right:60%;
+bottom:14.5%;
+}
+.v4 {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #00154F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1px;
+   margin: auto;
+    width:10%;
+    position:absolute;
+    bottom:5%;
+    left:1%
+    
+}
+.v4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.v4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.v4:hover span {
+  padding-right: 25px;
+}
+.v4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<body>
+<form action="Choice">
+<div>
+<h1><img src="Images/b.jpg" alt="Choice1"></h1>
+<input type="radio" name="choice" value=1 required>
+<label for="choice">Choice1</label>
+<h2><img src="Images/a.jpg" alt="Choice2"></h2>
+<div class="d">
+<input type="radio" name="choice"  value=2  required>
+<label  for="gender">Choice2</label>
+</div>
+<button class="v4" type="submit" class="v4">Create</button>
+
+</div>
+</form>
+</body>
+</html>

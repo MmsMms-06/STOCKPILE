@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+body{
+background-image: url("Images/d4.jpg");
+ background-repeat:no-repeat;
+color:#2F496E;
+position:absolute;
+top:20%;
+right:50%;
+font-family:Arial;
+}
+input[type=text] {
+  width: 70%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px;
+   background-color: #00154F;
+    color: #FFFFFF;
+}
